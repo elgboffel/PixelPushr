@@ -235,7 +235,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\Styling.css">
+      <DependentUpon>Styling.less</DependentUpon>
+    </Content>
+    <Content Include="css\Styling.min.css">
+      <DependentUpon>Styling.css</DependentUpon>
+    </Content>
+    <Content Include="css\Vendor\bootstrap-grid.min.css" />
+    <Content Include="css\Vendor\font-awesome.min.css" />
+    <Content Include="css\Vendor\normalize.css" />
     <Content Include="packages.config" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\plugins.js" />
+    <Content Include="scripts\vendor\jquery-1.11.3.min.js" />
+    <Content Include="scripts\vendor\modernizr-2.8.3.min.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -262,6 +276,18 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
+    <Content Include="Views\FrontPage.cshtml" />
+    <Content Include="Views\_Layout.cshtml" />
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <Content Include="css\StyleSheet.less" />
+    <Content Include="css\Styling.less" />
+    <Content Include="css\Styling.css.map">
+      <DependentUpon>Styling.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -277,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="media\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
